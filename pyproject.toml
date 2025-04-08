@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "qubojl"
+version         = "0.0.1"
+authors         = [
+    { name="Pedro Maciel Xavier", email="mail@pedro.ϵλ" },
+]
+description     = "Python bindings for QUBO.jl"
+readme          = "README.md"
+requires-python = ">=3.8"
+classifiers     = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license         = "MIT"
+license-files   = ["LICENSE"]
+dependencies    = [
+    "juliacall",
+]
+
+[project.urls]
+Homepage = "https://github.com/pedromxavier/qubojl"
+Issues   = "https://github.com/pedromxavier/qubojl/issues"
+
+[tool.setuptools]
+packages               = ["qubojl"]
+package-data = {qubojl = ["juliapkg.json"]}
+include-package-data   = false
