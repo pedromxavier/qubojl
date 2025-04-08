@@ -25,7 +25,9 @@ dependencies    = [
 Homepage = "https://github.com/pedromxavier/qubojl"
 Issues   = "https://github.com/pedromxavier/qubojl/issues"
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.setuptools]
-packages               = ["qubojl"]
 package-data = {qubojl = ["juliapkg.json"]}
 include-package-data   = false
